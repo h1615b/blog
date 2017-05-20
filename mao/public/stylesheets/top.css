@@ -1,0 +1,104 @@
+*{
+	margin:0;padding: 0;
+}
+button{
+	background: none;
+}
+/*.rt{
+	position: fixed;right: 10px;top: 40px;width: 80px;height: 850px;
+}
+.rt img{
+	width:100%;height: 100%;
+}*/
+body{
+	background: url(/images/bg.jpg);
+}
+.top{
+	width:100%;height: 40px;background-color:rgba(0,0,0,0.3);position: fixed;
+	overflow: hidden;
+}
+ .wrap{
+	width:1000px;margin:0 auto;
+}
+.top-1{
+	float: left;line-height: 40px;color: #fff;
+}
+.top-2{
+	float:right;
+}
+.top-2 button{
+	margin-top: 3px;
+}
+.content{
+	overflow: hidden;
+}
+.hd{
+	border-bottom: 2px dashed #ccc;
+}
+.hd .p1{
+	padding-top: 50px;
+}
+.hd .p1 a{
+	font-size: 26px;color: #AC2925;
+}
+.p2 a{
+	color: #AC2925;font-size: 14px;
+}
+.p3 a{
+	padding: 5px; color: #AC2925;
+}
+.p3 a:hover{
+	color: red;
+}
+#other{
+	overflow: hidden;
+}
+.liuyan{
+	width: 370px;height: 370px;border:1px solid #ddd;border-radius: 20px;margin-top:20px;float: left;background: #fff;box-shadow: 10px 10px 10px #5E5E5E;
+}
+.liuyan h3{
+	text-align: center;
+}
+textarea{
+	width:350px;height: 150px;resize:vertical;
+}
+.show{
+	width: 370px;height: 400px;border:1px solid #67B168;border-radius: 20px;margin-top: 20px;float: right;background: #C4E3F3;overflow: auto;
+}
+.show h3{
+	background: #C4E3F3;text-align: center;margin:0;height: 40px;line-height: 40px;border-radius: 20px;
+}
+#tb td{
+	line-height: 40px;color: #000000;font-weight: bolder;
+}
+#tb tr:nth-child(odd){
+	background: #fff;
+}
+#tb tr:nth-child(even){
+	background: #ddd;
+}
+#myCarousel{
+	height: 350px;width: 1000px;overflow: hidden;
+}
+.carousel-inner{
+	height: 350px;width:1000px;overflow: hidden;
+}
+.banner{
+	height: 350px;width:1000px;overflow: hidden;
+}
+.banner img{
+	height: 100%!important;width:1000px;
+}
+#left{
+	line-height: 350px;font-size: 50px;
+}
+#right{
+	line-height: 350px;font-size: 50px;
+}
+#ol{list-style-type:none;counter-reset:sectioncounter;}  
+#ol li:before {  
+    content:counter(sectioncounter) "、";   
+    counter-increment:sectioncounter;  
+ }
+#ol li{position:relative;}
+#ol li span{ position:absolute; right:20px; top:0px;line-height:42px ;color: #428bca;}  

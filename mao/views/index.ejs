@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title><%= title %></title>
+
+<link rel="stylesheet" type="text/css" href="/stylesheets/top.css"/>
+<link rel='stylesheet' href='/stylesheets/style.css' />
+<link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+
+
+</head>
+<body>
+	
+   <div  class='top'>
+	   	<div class='wrap'>
+	   		<div class='top-1'>
+	   			欢迎光临毛跃辉的博客！
+	   		</div>
+	   		<div class='top-2'>
+	   			<% if(!user){ %>
+	   				<button onclick="location.href='/login'" class="btn  btn-default login">登陆</button>
+		    		<button onclick="location.href='/register'" class="btn  btn-default register">注册</button>
+	   				   <% }else{ %>
+	   				   	<%- "欢迎,亲爱的"+user+"登陆" %>
+	   				   	<button onclick="location.href='/relogin'" class="btn  btn-default">退出</button>
+    						<button onclick="location.href='/register'" class="btn  btn-default">注册</button>
+    						
+		    
+		      <% } %>
+		    </div>
+	    </div>
+   </div>
+  <!-- <div class='rt'><img src='/images/mao.jpg'</div>-->
+  <div class='content' >
+  	<div class="wrap">
+  	<div class='hd'>
+  		
+  		<p class='p1'><a href='###'>毛跃辉的博客</a></p>
+  		<p class='p2'><img src='/images/boke.jpg'/>网络人气帅哥，H5高级工程师</p>
+  		<p class='p3'>
+  		<ul id="myTab" class="nav nav-tabs">
+					<li class="active">
+						<a href="#home" data-toggle="tab">首页</a>
+					</li>	
+					<li>
+						<a href="#about" data-toggle="tab">关于</a>
+					</li>	
+					<li>
+						<a href="#other" data-toggle="tab">留言板</a>
+					</li>	
+			</ul>
+			<div id="myTabContent" class="tab-content">
+			<div class="tab-pane fade in active" id="home">
+				
+				<%- include('home.ejs')%>
+			</div>
+			<div class="tab-pane fade" id="about">
+				<%- include('about.ejs')%>
+			</div>
+			<div class="tab-pane fade" id="other">
+				<%- include('other.ejs')%>
+			
+		
+			
+			
+			
+			</div>
+  		</p>
+  	</div>
+  	
+  	
+  	</div>
+  </div>
+</body>
+<script src="/javascripts/jquery-1.10.1.js" type="text/javascript" charset="utf-8"></script>
+<script src="/javascripts/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript">
+	
+</script>
+</html>

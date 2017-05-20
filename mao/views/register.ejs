@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+    <style type="text/css">
+    	body,html{
+    		width: 100%;height: 100%;
+    	}
+    	.pass{
+    		width:200px
+    	}
+    	.user{
+    		width: 200px;
+    	}
+    	.box{
+    		width: 250px;height: 250px;
+    		position: absolute;left: 50%;top:50%;margin-left: -125px;margin-top: -125px;
+    	}
+    	.btnn{
+    		margin-left:80px;margin-top: 10px;
+    	}
+    	div{
+    		font-size: 20px;
+    	}
+    	img{
+    		width: 100%;height: 100%;position: relative;
+    	}
+    	.tips{
+    		color:red;font-size: 14px;
+    	}
+    </style>
+  </head>
+  <body>
+    <img src="/images/bg1.jpg" />
+   <div class='box'>
+	    <form action="/users/form" method="post">
+	    	<div>账号：<input type="text" name="user" class="form-control user" /></div>
+	    	<%- num %>
+	    	<div>密码：<input type="password" name="pass" class="form-control pass"/></div>
+	    	<button class='btn btn-default btnn'>注册</button>
+	    </form>
+    </div>
+  </body>
+</html>
